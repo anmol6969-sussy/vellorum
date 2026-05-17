@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vellorum Watches | Luxury Timepieces</title>
+  <meta name="description" content="Discover premium luxury watches by Vellorum.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <div class="close-cart" id="closeCart">&times;</div>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Items dynamically injected here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <button class="btn" onclick="alert('Checkout functionality coming soon!')">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Vellorum</a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="cart-icon" id="cartIcon">
+          <!-- SVG Cart Icon -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SLIDESHOW -->
+  <section class="hero">
+    <div class="slide active" style="background-image: url('https://picsum.photos/seed/slide1/1920/1080');">
+      <div class="hero-content">
+        <h1>Master Every Moment</h1>
+        <p>Discover our exclusive collection of luxury timepieces.</p>
+        <a href="products.html" class="btn">Shop Now</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('https://picsum.photos/seed/slide2/1920/1080');">
+      <div class="hero-content">
+        <h1>Timeless Elegance</h1>
+        <p>Crafted for those who appreciate the finer things in life.</p>
+        <a href="products.html" class="btn">Explore Collection</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('https://picsum.photos/seed/slide3/1920/1080');">
+      <div class="hero-content">
+        <h1>The Titanium Diver</h1>
+        <p>Engineered for the extremes. Designed for everyday.</p>
+        <a href="products.html" class="btn btn-outline">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="container">
+    <h2 class="section-title">Featured Timepieces</h2>
+    <div class="product-grid" id="featuredProducts">
+      <!-- Products dynamically injected via app.js -->
+    </div>
+    <div style="text-align: center; margin-bottom: 80px;">
+      <a href="products.html" class="btn btn-outline">View All Products</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h2>Vellorum</h2>
+        <p style="color: var(--text-muted); margin-top: 10px; max-width: 300px;">
+          Redefining luxury horology with timeless elegance and precision.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="products.html">Men's Watches</a></li>
+          <li><a href="products.html">Women's Watches</a></li>
+          <li><a href="products.html">Limited Edition</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Vellorum Watches. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
