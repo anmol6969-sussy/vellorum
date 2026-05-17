@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Vellorum Watches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <div class="close-cart" id="closeCart">&times;</div>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Items dynamically injected here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <button class="btn" onclick="alert('Checkout functionality coming soon!')">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Vellorum</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="cart-icon" id="cartIcon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Heritage</h1>
+      <p style="color: var(--text-muted); font-size: 1.2rem;">A Legacy of Precision and Elegance.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT CONTENT -->
+  <section class="container page-content">
+    <div class="about-text">
+      <p>
+        Founded in the heart of Switzerland, Vellorum Watches was born from a singular vision: to create timepieces that are not merely instruments for telling time, but heirlooms that tell a story.
+      </p>
+      <p>
+        For over a century, our master watchmakers have dedicated their lives to the pursuit of perfection. Every Vellorum watch is a testament to this unwavering commitment, meticulously assembled by hand using only the finest materials—from scratch-resistant sapphire crystals to high-grade titanium and exquisite rose gold.
+      </p>
+      <p>
+        We believe that true luxury lies in the details. The intricate movement of our mechanical calibers, the flawless polish of our cases, and the seamless integration of classic design with modern innovation are what make a Vellorum watch unmistakable.
+      </p>
+      <p>
+        When you wear a Vellorum, you are not just wearing a watch; you are wearing a piece of history, a symbol of achievement, and a promise of enduring quality.
+      </p>
+    </div>
+    <div style="margin-top: 60px; text-align: center;">
+      <img src="https://picsum.photos/seed/about/1000/500" alt="Watchmaking process" style="border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h2>Vellorum</h2>
+        <p style="color: var(--text-muted); margin-top: 10px; max-width: 300px;">
+          Redefining luxury horology with timeless elegance and precision.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="products.html">Men's Watches</a></li>
+          <li><a href="products.html">Women's Watches</a></li>
+          <li><a href="products.html">Limited Edition</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Vellorum Watches. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
