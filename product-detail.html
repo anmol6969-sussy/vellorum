@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products | Vellorum Watches</title>
+  <title>Product Details | Vellorum Watches</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="product-detail-page">
 
   <!-- CART SIDEBAR -->
   <div class="cart-overlay" id="cartOverlay"></div>
@@ -50,35 +50,35 @@
     </div>
   </header>
 
-  <!-- PRODUCTS PAGE CONTENT -->
-  <div class="container products-page">
+  <!-- PRODUCT DETAIL SECTION -->
+  <section class="container" style="padding-top: 120px; min-height: 70vh;">
+    <a href="products.html" class="back-link">&larr; Back to Products</a>
+    <div id="productDetailContainer" class="product-detail-wrapper">
+        <!-- Content will be injected by JS -->
+    </div>
     
-    <!-- Sidebar Filters -->
-    <aside class="sidebar-filters">
-      <div class="filter-group">
-        <h3>Search</h3>
-        <input type="text" id="searchInput" placeholder="Search watches...">
-      </div>
-      
-      <div class="filter-group">
-        <h3>Categories</h3>
-        <ul class="category-list">
-          <li data-category="all" class="active">All Watches</li>
-          <li data-category="men">Men's Watches</li>
-          <li data-category="women">Women's Watches</li>
-          <li data-category="limited">Limited Edition</li>
-        </ul>
-      </div>
-    </aside>
+    <!-- COMMENTS SECTION -->
+    <div class="comments-section" style="margin-top: 60px;">
+        <h3 style="border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-bottom: 30px;">Customer Reviews</h3>
+        
+        <div id="commentsList" class="comments-list">
+            <!-- Comments injected by JS -->
+        </div>
 
-    <!-- Products Grid -->
-    <main class="products-content">
-      <div class="product-grid" id="allProducts">
-        <!-- Products dynamically injected via app.js -->
-      </div>
-    </main>
-
-  </div>
+        <div class="comment-form-wrapper">
+            <h4 style="margin-bottom: 15px;">Leave a review</h4>
+            <form id="commentForm">
+                <div class="form-group">
+                    <input type="text" id="commentName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="commentText" placeholder="Your review..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Review</button>
+            </form>
+        </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>

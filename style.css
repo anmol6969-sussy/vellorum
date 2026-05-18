@@ -618,3 +618,108 @@ footer {
     transform: translateX(-300px);
   }
 }
+
+/* =========================================
+   PRODUCT DETAIL PAGE & COMMENTS
+========================================= */
+.product-detail-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.product-detail-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.product-detail-image img {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.product-detail-info {
+  flex: 1;
+}
+
+.product-detail-info h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.product-detail-info .price {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.product-detail-info .description {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+}
+
+.comments-section {
+  background-color: var(--surface-color);
+  padding: 40px;
+  border: 1px solid var(--border-color);
+}
+
+.comment-form-wrapper {
+  margin-top: 40px;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment-card {
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255,255,255,0.02);
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.comment-name {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.comment-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.comment-body {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .product-detail-wrapper {
+    flex-direction: column;
+  }
+}
+
